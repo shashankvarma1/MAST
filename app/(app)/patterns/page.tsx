@@ -344,7 +344,7 @@ export default function PatternsPage() {
 
             {selectedSystem && (
               <div style={s.drillCard}>
-                <p style={s.drillTitle} style={{ color: SYSTEM_COLORS[selectedSystem] }}>
+                <p style={{ ...s.drillTitle, color: SYSTEM_COLORS[selectedSystem] }}>
                   {selectedSystem.charAt(0).toUpperCase() + selectedSystem.slice(1)} system
                 </p>
                 <p style={s.drillSubLabel}>SYMPTOMS LOGGED</p>
